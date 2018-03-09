@@ -41,8 +41,8 @@
                 android:layout_marginBottom="1dp">
 
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/postre1"
                     android:scaleType="centerCrop"
                     app:civ_border_width="2dp"
@@ -73,6 +73,7 @@
 
 
                     <FrameLayout
+                        android:id="@+id/id_tv_border"
                         android:layout_marginLeft="10dp"
                         android:paddingTop="10dp"
                         android:layout_marginRight="20dp"
@@ -86,13 +87,22 @@
                             android:background="@drawable/borde1"/>
 
                     </FrameLayout>
+
                 </RelativeLayout>
 
 
             </LinearLayout>
         </LinearLayout>
 
+        <ImageView
+            android:id="@+id/id_tv_image1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_tv_border"
+            android:paddingTop="10dp"
+            android:src="@drawable/staryellow"
 
+            />
 
 
     </ScrollView>
